@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: chat-server
+
+server:
+  port: 9000
+
+logging:
+  level:
+    org.springframework.web: INFO
+
+jwt:
+  jwe-secret: 1234
+  key-path: /keys/public.pem
