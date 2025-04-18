@@ -1,6 +1,7 @@
-package org.example.dto
+package org.example.model.dto
 
-import org.example.request.ChatMessage
+import org.example.model.request.ChatMessage
+
 
 data class ChatMessageSendEvent(
     val senderId: String,
