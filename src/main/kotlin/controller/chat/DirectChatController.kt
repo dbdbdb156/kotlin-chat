@@ -1,7 +1,7 @@
-package org.example.controller
+package org.example.controller.message
 
-import org.example.dto.ChatMessageSendEvent
-import org.example.request.ChatMessage
+import org.example.model.dto.ChatMessageSendEvent
+import org.example.model.request.ChatMessage
 import org.springframework.context.ApplicationEventPublisher
 import org.springframework.messaging.handler.annotation.Header
 import org.springframework.messaging.handler.annotation.MessageMapping
