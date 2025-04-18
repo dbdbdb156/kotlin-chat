@@ -1,9 +1,22 @@
 spring:
   application:
     name: chat-server
+  datasource:
+    url: jdbc:postgresql://localhost:5432/kotlin_chat
+    username: chat_user
+    password: chat_pass
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update # 개발용: create, update, validate, none(실운영)
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
 
 server:
-  port: 9000
+  port: 9010
 
 logging:
   level:
@@ -12,3 +25,9 @@ logging:
 jwt:
   jwe-secret: 1234
   key-path: /keys/public.pem
+
+feign:
+  client:
+    config:
+      user-feign-client:
+        url: http://localhost:3000
