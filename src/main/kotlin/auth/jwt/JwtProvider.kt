@@ -1,15 +1,10 @@
-package org.example.provider
+package org.example.auth.jwt
 
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
-import com.nimbusds.jose.JWEObject
 import com.nimbusds.jose.crypto.DirectDecrypter
-import com.nimbusds.jose.crypto.RSADecrypter
 import com.nimbusds.jose.crypto.RSASSAVerifier
 import com.nimbusds.jwt.EncryptedJWT
 import com.nimbusds.jwt.SignedJWT
-import org.example.properties.JwtProperties
-import org.springframework.beans.factory.annotation.Value
-import java.security.interfaces.RSAPrivateKey
 import java.security.interfaces.RSAPublicKey
 import java.security.KeyFactory
 import java.security.spec.X509EncodedKeySpec

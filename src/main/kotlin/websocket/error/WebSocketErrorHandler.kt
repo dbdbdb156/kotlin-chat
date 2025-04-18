@@ -1,4 +1,4 @@
-package org.example.handler
+package org.example.websocket.error
 
 import org.springframework.messaging.handler.annotation.MessageExceptionHandler
 import org.springframework.web.bind.annotation.ControllerAdvice

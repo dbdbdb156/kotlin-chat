@@ -1,4 +1,4 @@
-package org.example.request
+package org.example.model.request
 
 data class ChatMessage(
     val senderId: String,

@@ -1,8 +1,6 @@
 package org.example.config
 
-import com.fasterxml.jackson.databind.ObjectMapper
-import org.example.provider.JwtProvider
-import org.example.request.ChatMessage
+import org.example.auth.jwt.JwtProvider
 import org.springframework.context.annotation.Configuration
 import org.springframework.messaging.Message
 import org.springframework.messaging.MessageChannel

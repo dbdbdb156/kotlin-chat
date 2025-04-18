@@ -1,4 +1,4 @@
-package org.example.properties
+package org.example.auth.jwt
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 import org.springframework.stereotype.Component
